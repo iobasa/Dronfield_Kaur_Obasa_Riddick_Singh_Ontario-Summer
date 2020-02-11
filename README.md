@@ -1,1 +1,4 @@
-# Dronfield_Kaur_Obasa_Riddick_Singh_Ontario-Summer
+# intro_vue
+Multimedia Authoring: Week 3 - Jan 21 2020
+
+- all files are in "www" folder already and will be updated. This is a backup

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> <!-- icon library -->
+
+  
+  <link rel="stylesheet" href="public/css/main.css">
+  
+  <title>Ontario Tourism</title>
+</head>
+
+<body id="mainBody">
+  
+  <main id="app">
+    <header id="mainHeader">
+
+      <div class="logNav">
+    <div id="main_logo"><img src="images/wide-logo.png" alt="top logo" class="Logo" ></div>
+
+    <nav class="mainNav">
+      <ul>
+  <li><a href="#placesToVisit">PLACES TO VISIT</a></li>
+  <li><a href="#thingstoDo">THINGS TO DO</a></li>
+  <li><a href="#bookAVisit">BOOK A VISIT</a></li>
+  <li><a href="#contactPanel">CONTACT US</a></li>
+  <li><router-link to="/places">SIGNUP</router-link></li>
+  
+  
+  
+  </ul>
+</nav>
+
+<router-view></router-view>
+
+</div>
+
+
+<h1 id ="theWelcome">Welcome to Ontario</h1>
+<h2 id="tagline">Find Yourself At Home</h2>
+
+
+
+</header>
+
+
+      <section id="placesToVisit">
+        <img src="images/lakeOntario.png" alt="section1" class="lakeImage">
+        <div id="textDiv1">
+          <div id="text">
+          <h1 class="sectionHead">
+            Top 25 Places to visit in Ontario
+          </h1>
+
+          <p class="sectionP">
+            <span class="dropCap">T</span>he province is located in central Canada. ... Besides being<br> Canada's main economic hub, Ontario is also known for its<br> natural diversity, including vast forests, beautiful provincial<br> parks, four of the five Great Lakes and the world-famous<br> 
+            Niagara falls<br>
+          </p>
+
+          
+          <a href="https://attractionsontario.ca/?gclid=CjwKCAiAvonyBRB7EiwAadauqS2RwL2nwkt7EArVF2hdPACDHXfus0fWgd7jDLD6IaE9wP2L7j6cDxoCPp4QAvD_BwE"><button type="button">Look For More</button></a>
+          
+          
+
+          <button type="button">Have A Look</button>
+        </div>
+
+        </div></section>
+
+        <section id="thingstoDo">
+          <img src="images/wineGirls.png" alt="section2" class="wineGirlsImage">
+          <div id="textDiv2">
+            <h1 class="sectionHead">
+              Things  To Do
+            </h1>
+  
+            <p class="sectionP">
+              <span class="dropCap">T</span>here are various things that a person<br>
+                can do on visiting Ontario. Among them <br>
+                the most to do thing are wine parties,<br>
+                Niagara fall helicopter ride, Niagara <br>
+                falls boat cruise ride.<br>
+            </p>
+           <a href="https://www.triphobo.com/places/ontario-california-united-states/things-to-do?utm_source=5412&utm_medium=123&utm_campaign=dsa-fun-things-to-do-d-12345&gclid=CjwKCAiAvonyBRB7EiwAadauqZGwenyFZrF6Cr-9FRHm9w3fXKQHfU5PwC1L6cM9ZYrZ0mW3gK1d3xoCBzgQAvD_BwE"> <button type="button">More Adventures</button></a>
+          </div>
+        </section>
+
+        <section id="Events">
+
+          
+          <img src="images/fireworks.png" alt="section2" class="fireworksImage">
+          <div id="textDiv3">
+            <h1 class="sectionHead">
+              Events to attend
+            </h1>
+  
+            <p class="sectionP">
+              <span class="dropCap">T</span>here are many events that come and<br> go every year in this beautiful province.<br> You can experience canadian lifestyle in<br> these events. Some of the events are:<br> 
+
+              Winterlude, Ottawa bear fest, Ottawa boat show.<br>
+            </p>
+            <a href="https://www.ontariotravel.net/en/play/urban-adventures?WT.mc_id=1100_ON_PaidSearch_Google_EN_OntarioExperiencesSEM_ONUrbanAdventures&gclid=CjwKCAiAvonyBRB7EiwAadauqauwzb0XBMTj11u7hOk5G6KXTZaKV4eAk0i1g6KD-QMqB_3liNuR2hoCunYQAvD_BwE"><button type="button">More Events</button></a>
+          </div>
+          </section>
+
+          <section id="bookAVisit">
+            <h1 id="bookSectionHeader">BOOK A VISIT</h1>
+            
+            <div id="linksContainer">
+              <div id="row1">
+                <img src="images/tripadvisor.png" alt="links" class="externalLinks">
+                
+                <img src="images/nft-leaf.svg" alt="links" class="externalLinks1">
+
+                <img src="images/lochlogo.png" alt="links" class="externalLinks2">
+              </div>
+
+              <div id="row2">
+                <img src="images/horselogo.png" alt="links" class="externalLinks3">
+
+                <img src="images/blueMountain.png" alt="links" class="externalLinks4">
+              </div>
+            </div>
+
+
+          </section>
+          <section id="contactPanel">
+            <h1 class="sectionHead">HAVE QUESTIONS?</h1>
+            <form action="data/contact.php" method="post">
+
+              <section class="contLabel">
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name">
+            </section>
+
+          <section class="contLabel">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email">
+            </section>
+
+          <section class="contLabel">
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+            </section>
+          
+              <button type="submit" id="contactButton">Submit</button>
+          </form>
+            
+
+
+          </section>
+          
+
+          
+  </main>
+
+  <footer id="mainFooter">
+    <img src="/images/simple-logo.png">
+
+    <h2 id ="footerText">Made with Love by Sparrow Creative © 2020 All Rights Reserved</h2>
+  </footer>
+
+  <!-- Script Section -->
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
