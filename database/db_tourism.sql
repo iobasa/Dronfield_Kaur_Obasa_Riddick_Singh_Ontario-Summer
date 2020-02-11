@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 10, 2020 at 03:25 PM
+-- Generation Time: Feb 11, 2020 at 01:28 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -35,10 +35,11 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
   `user_lname` varchar(50) NOT NULL,
   `user_email` varchar(100) NOT NULL,
   `user_country` text NOT NULL,
-  `user_subdate` datetime NOT NULL,
-  `user_lastdate` datetime NOT NULL,
+  `user_subdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `user_lastdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `user_ip` varchar(50) NOT NULL DEFAULT 'no',
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
